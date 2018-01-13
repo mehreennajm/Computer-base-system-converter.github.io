@@ -1,0 +1,62 @@
+
+
+
+<!DOCTYPE html>
+<!-- release v4.4.7, copyright 2014 - 2017 Kartik Visweswaran -->
+<!--suppress JSUnresolvedLibraryURL -->
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+<script  src="script.js"></script>
+<style type="text/css">
+.kv-main.container{
+	margin-top: 15%;
+	border-radius: 5% 5% 5% 5%;
+  
+}
+
+
+</style>
+
+
+    <meta charset="UTF-8"/>
+    
+    <title>BASE</title>
+    
+   
+    <link rel="stylesheet" type="text/css"  href="bootstrap/css/bootstrap.css">
+
+ 
+</head>
+<body  style="background-image: url('bg.jpg');" ng-app="mainApp" ng-controller="app">
+
+
+<div class="container kv-main" style="background-color: #222;">
+<div class="col-md-12 col-sm-12 col-md-offset-4 col-sm-offset-4">
+    <div class="page-header">
+        <h2 style="text-align: center;color:white; ">Custom Computer Base Number Systems
+           
+        </h2>
+    </div>
+   
+   
+    <div class="form-group">
+    
+    <input type="text"  class="form-control" ng-model="number" placeholder="Enter your number:">
+  </div>
+   <div class="form-group">
+    <
+    <input type="text" ng-model="baseNumber" class="form-control" placeholder="Enter your base number system:">
+  </div>
+  <div>
+  <label style="color: white;">Your Number {{number}} in Base {{baseNumber}} is {{number | base:baseNumber}}</label>
+  </div>
+   
+
+
+
+
+</body>
+
+</html>
